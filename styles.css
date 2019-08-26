@@ -94,7 +94,7 @@ body{
 
 .introduction{
     position: relative;
-    top: 10vh;
+    top: 15vh;
     text-align: center;
 }
 
@@ -630,7 +630,9 @@ h2{
         display: none;
     }
 
-    
+    .introduction{
+      top:20vh;
+    }
 
     .introduction p, .contactPara{
         max-width: 80%;
@@ -638,6 +640,7 @@ h2{
 
     .header div{
         max-width: 100%;
+        margin: auto;
     }
 
 
