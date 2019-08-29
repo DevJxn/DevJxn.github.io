@@ -99,13 +99,14 @@
                 <h3 class = "advantageTitle"> Fast support </h3>
         </div>
 
-        <div class = "divider" id = "browseScroll"></div>  <!-- Point where the browse button in the navBar stops -->
 
     </div>
 
                                         <!-- Product Section -->
 
     <div class = "productSection">
+
+        <div class = "cardDivider" id = "browseScroll"></div>  <!-- Point where the browse button in the navBar stops -->
 
         <h3 class = "productTitle"> Products </h3>
         <div class = "filterSection">
@@ -117,257 +118,461 @@
           <div class = "filter" id = "fithFilter" onclick="openFilter(this)"> coming soon </div>
         </div>
 
+        
         <div class = "mainCardSection">
 
             <div class = "mainCardBundle">
 
-                <div class = "markedButton">
-                    Top Bundle
+                <div class = "markedButton"> Save 25% </div>
+
+                <div class = "upperCard">
+
+                        <div class = "slideButtonLeft" onclick="getBundleName(allBundle,this)"><i class="fas fa-chevron-left"></i></div>
+                        <div class = "slideButtonRight" onclick="getBundleName(allBundle,this)"><i class="fas fa-chevron-right"></i></div>
+        
+                    <img class = "cardImage" src = "images/allBundleScreen.jpg" draggable="false" id = "allBundle">
+        
                 </div>
-                <div class = "slideButtonRight" onclick="getBundleName(allBundle,this)"> <i class="fas fa-chevron-right"></i> </div>
-                <div class = "slideButtonLeft" onclick="getBundleName(allBundle,this)"> <i class="fas fa-chevron-left"></i> </div>
-
-                <img draggable="false" class = "mainCardImage" id = "allBundle" src = "images/allBundleScreen.jpg">
-                <div class = "pricingSection">
-                <h4> All Clockfaces (11+) </h4>
-                <h4 class = "mainCardSubtitle"> Versa / Versa Lite </h4>
-                <a href = "https://k-pay.io/code/?s=4C4F1129-FC50-3BE0-3CF9-7DBFB131797C&dsu=487897&p=3374-3375" target="_blank" ><div class = "pricingButton"> $12.49 </div> </a>
-                </div>
-            </div>
-
-            <div class = "mainCardBundle">
-
-              <div class = "slideButtonRight" onclick="getBundleName(simpleStatsBundle,this)"> <i class="fas fa-chevron-right"></i> </div>
-              <div class = "slideButtonLeft" onclick="getBundleName(simpleStatsBundle,this)"> <i class="fas fa-chevron-left"></i> </div>
-
-                <img draggable="false" class = "mainCardImage" id = "simpleStatsBundle" src = "images/simpleBundleScreen.jpg">
-                <div class = "pricingSection">
-                <h4> Simple Stats (6+) </h4>
-                <h4 class = "mainCardSubtitle"> Versa / Versa Lite </h4>
-                <a href = "https://k-pay.io/code/?s=4C4F1129-FC50-3BE0-3CF9-7DBFB131797C&dsu=487897&p=3374-3375" target = "_blank"> <div class = "pricingButton"> $8.00</div> </a>
-                </div>
-            </div>
-
-            <div class = "mainCardBundle">
-
-              <div class = "slideButtonRight" onclick="getBundleName(cityBundle,this)"> <i class="fas fa-chevron-right"></i> </div>
-              <div class = "slideButtonLeft" onclick="getBundleName(cityBundle,this)"> <i class="fas fa-chevron-left"></i> </div>
-
-                <img draggable="false" class = "mainCardImage" id = "cityBundle" src = "images/cityBundleScreen.jpg">
-                <div class = "pricingSection">
-                <h4> City Bundle (3+) </h4>
-                <h4 class = "mainCardSubtitle"> Versa / Versa Lite </h4>
-                <a href = "https://k-pay.io/code/?s=4C4F1129-FC50-3BE0-3CF9-7DBFB131797C&dsu=487897&p=3374-3858" target = "_blank"> <div class = "pricingButton"> $4.00</div> </a>
-                </div>
-            </div>
-
-
-            <div class = "mainCard">
-                    <div class = "markedButton">
-                            Top Selling
+                <div class = "lowerCard">
+        
+                    <h3 class = "cardTitle"> All clockfaces (11+) </h3>
+        
+                        <div class = "infoSection">
+                        <div class = "cardInfo"> <i class="fas fa-check"></i> Versa </div>
+                        <div class = "cardInfo"> <i class="fas fa-check"></i> Versa Lite </div>
+                        <div class = "cardInfo"> <i class="fas fa-times"></i> Ionic </div>
                         </div>
-
-                <img draggable="false" class = "mainCardImage" src = "images/oceanStatsScreen.jpg">
-                <div class = "pricingSection">
-                <h4> Simple Ocean Stats </h4>
-                <h4 class = "mainCardSubtitle"> Versa / Versa Lite / Ionic </h4>
-                <a href = "https://k-pay.io/code/?s=4C4F1129-FC50-3BE0-3CF9-7DBFB131797C&dsu=487897&p=3374-3346" target="_blank"> <div class = "pricingButton"> $1.99</div> </a>
+        
+                        <a href = "https://k-pay.io/code/?s=4C4F1129-FC50-3BE0-3CF9-7DBFB131797C&dsu=487897&p=3374-3375" target = "_blank" draggable="false"><button class = "cardButton"> $13.49 </button></a>
+        
                 </div>
             </div>
+            <div class = "mainCardBundle">
 
-            <div class = "mainCard">
-                <img draggable="false" class = "mainCardImage" src = "images/sunsetStatsScreen.jpg">
-                <div class = "pricingSection">
-                <h4> Simple Sunset Stats </h4>
-                <h4 class = "mainCardSubtitle"> Versa / Versa Lite / Ionic</h4>
-                <a href = "https://k-pay.io/code/?s=4C4F1129-FC50-3BE0-3CF9-7DBFB131797C&dsu=487897&p=3374-3433" target="_blank"> <div class = "pricingButton"> $1.99</div> </a>
-                </div>
-            </div>
+                    <div class = "upperCard">
+    
+                        <div class = "slideButtonLeft" onclick="getBundleName(simpleStatsBundle,this)"><i class="fas fa-chevron-left"></i></div>
+                        <div class = "slideButtonRight" onclick="getBundleName(simpleStatsBundle,this)"><i class="fas fa-chevron-right"></i></div>
+            
+                        <img class = "cardImage" src = "images/simpleBundleScreen.jpg" draggable="false" id = "simpleStatsBundle">
+            
+                    </div>
+                    <div class = "lowerCard">
+            
+                        <h3 class = "cardTitle"> Simple Stats (6+) </h3>
+            
+                            <div class = "infoSection">
+                            <div class = "cardInfo"> <i class="fas fa-check"></i> Versa </div>
+                            <div class = "cardInfo"> <i class="fas fa-check"></i> Versa Lite </div>
+                            <div class = "cardInfo"> <i class="fas fa-times"></i> Ionic </div>
+                            </div>
+            
+                            <a href = "https://k-pay.io/code/?s=4C4F1129-FC50-3BE0-3CF9-7DBFB131797C&dsu=487897&p=3374-3375" target = "_blank" draggable="false"><button class = "cardButton"> $8.00 </button></a>
+            
+                    </div>
 
-            <div class = "mainCard">
-                <img draggable="false" class = "mainCardImage" src = "images/summerStatsScreen.jpg">
-                <div class = "pricingSection">
-                <h4> Simple Summer Stats </h4>
-                <h4 class = "mainCardSubtitle"> Versa / Versa Lite </h4>
-                <a href = "https://k-pay.io/code/?s=4C4F1129-FC50-3BE0-3CF9-7DBFB131797C&dsu=487897&p=3374-3566" target="_blank"> <div class = "pricingButton"> $1.49</div> </a>
-                </div>
-            </div>
-
-            <div class = "mainCard">
-
-                <img draggable="false" class = "mainCardImage" src = "images/nyStatsScreen.jpg">
-                <div class = "pricingSection">
-                <h4> Simple NY Stats </h4>
-                <h4 class = "mainCardSubtitle"> Versa / Versa Lite </h4>
-                <a href = "https://k-pay.io/code/?s=4C4F1129-FC50-3BE0-3CF9-7DBFB131797C&dsu=487897&p=3374-3705" target="_blank"> <div class = "pricingButton"> $1.49</div>
-                </div> </a>
-            </div>
-
-            <div class = "mainCard">
-
-                <div class = "markedButton">
-                    New
                 </div>
 
-                <img draggable="false" class = "mainCardImage" src = "images/torontoScreen.jpg">
-                <div class = "pricingSection">
-                <h4> Toronto Stats </h4>
-                <h4 class = "mainCardSubtitle"> Versa / Versa Lite </h4>
-                <a href = "https://k-pay.io/code/?s=4C4F1129-FC50-3BE0-3CF9-7DBFB131797C&dsu=487897&p=3374-3793" target = "_blank"> <div class = "pricingButton"> $1.49</div> </a>
-                </div>
-            </div>
+                <div class = "mainCardBundle">
 
-            <div class = "mainCard">
-                <img draggable="false" class = "mainCardImage" src = "images/londonStatsScreen.jpg">
-                <div class = "pricingSection">
-                <h4> Simple London Stats </h4>
-                <h4 class = "mainCardSubtitle"> Versa / Versa Lite </h4>
-                <a href = "https://k-pay.io/code/?s=4C4F1129-FC50-3BE0-3CF9-7DBFB131797C&dsu=487897&p=3374-3354" target="_blank"> <div class = "pricingButton"> $1.49</div> </a>
-                </div>
-            </div>
+                        <div class = "upperCard">
+        
+                            <div class = "slideButtonLeft" onclick="getBundleName(cityBundle,this)"><i class="fas fa-chevron-left"></i></div>
+                            <div class = "slideButtonRight" onclick="getBundleName(cityBundle,this)"><i class="fas fa-chevron-right"></i></div>
+                
+                            <img class = "cardImage" src = "images/cityBundleScreen.jpg" draggable="false" id = "cityBundle">
+                
+                        </div>
+                        <div class = "lowerCard">
+                
+                            <h3 class = "cardTitle"> City Bundle (3+) </h3>
+                
+                                <div class = "infoSection">
+                                <div class = "cardInfo"> <i class="fas fa-check"></i> Versa </div>
+                                <div class = "cardInfo"> <i class="fas fa-check"></i> Versa Lite </div>
+                                <div class = "cardInfo"> <i class="fas fa-times"></i> Ionic </div>
+                                </div>
+                
+                            <a href = "https://k-pay.io/code/?s=4C4F1129-FC50-3BE0-3CF9-7DBFB131797C&dsu=487897&p=3374-3858" target = "_blank" draggable="false"><button class = "cardButton"> $4.00 </button></a>
+                
+                        </div>
+    
+                </div>    
 
-            <div class = "mainCard">
-                <img draggable="false" class = "mainCardImage" src = "images/mountainStatsScreen.jpg">
-                <div class = "pricingSection">
-                <h4> Simple Mountain Stats </h4>
-                <h4 class = "mainCardSubtitle"> Versa / Versa Lite </h4>
-                <a href = "https://k-pay.io/code/?s=4C4F1129-FC50-3BE0-3CF9-7DBFB131797C&dsu=487897&p=3374-3353" target="_blank"><div class = "pricingButton"> $1.49</div> </a>
-                </div>
-            </div>
+                <div class = "mainCard">
 
-            <div class = "mainCard">
-                <img draggable="false" class = "mainCardImage" src = "images/forestScreen.jpg">
-                <div class = "pricingSection">
-                <h4> Deep Forest </h4>
-                <h4 class = "mainCardSubtitle"> Versa / Versa Lite / Ionic </h4>
-                <a href = "https://k-pay.io/code/?s=4C4F1129-FC50-3BE0-3CF9-7DBFB131797C&dsu=487897&p=3374-3317" target="_blank"> <div class = "pricingButton"> $1.49</div> </a>
-                </div>
-            </div>
+                    <div class = "markedButton"> Top Selling </div>
 
-            <div class = "mainCardSoon">
+                    <div class = "upperCard">
 
-                <div class = "markedButton">
-                    Soon
-                </div>
+                    <img class = "cardImage" src = "images/oceanStatsScreen.jpg">
 
-                <img draggable="false" class = "mainCardImage" src = "images/circlesScreen.jpg">
-                <div class = "pricingSection">
-                <h4> Circles </h4>
-                <h4 class = "mainCardSubtitle"> Versa / Versa Lite / Ionic </h4>
-                <div class = "pricingButton"> $1.99</div>
-                </div>
-            </div>
+                    </div>
+                    <div class = "lowerCard">
 
-            <div class = "mainCardSoon">
+                    <h3 class = "cardTitle"> Simple Ocean Stats </h3>
 
-                <div class = "markedButton">
-                    Soon
+                    <div class = "infoSection">
+                    <div class = "cardInfo"> <i class="fas fa-check"></i> Versa </div>
+                    <div class = "cardInfo"> <i class="fas fa-check"></i> Versa Lite </div>
+                    <div class = "cardInfo"> <i class="fas fa-check"></i> Ionic </div>
+                    </div>
+
+                    <a href = "https://k-pay.io/code/?s=4C4F1129-FC50-3BE0-3CF9-7DBFB131797C&dsu=487897&p=3374-3346" target = "_blank" draggable="false"><button class = "cardButton"> $1.99 </button></a>
+
+                    </div>
                 </div>
 
-                <img draggable="false" class = "mainCardImage" src = "images/triangleScreen.jpg">
-                <div class = "pricingSection">
-                <h4> Triangles </h4>
-                <h4 class = "mainCardSubtitle"> Versa / Versa Lite / Ionic</h4>
-                <div class = "pricingButton"> $1.99</div>
-                </div>
-            </div>
+                <div class = "mainCard">
 
-            <div class = "mainCard">
-                <img draggable="false" class = "mainCardImage" src = "images/frizzyScreen.jpg">
-                <div class = "pricingSection">
-                <h4> Pink frizzy </h4>
-                <h4 class = "mainCardSubtitle"> Versa / Versa Lite / Ionic </h4>
-                <a href = "https://k-pay.io/code/?s=4C4F1129-FC50-3BE0-3CF9-7DBFB131797C&dsu=487897&p=3374-3345" target="_blank"><div class = "pricingButton"> $1.99</div> </a>
-                </div>
-            </div>
+                    <div class = "upperCard">
 
-            <div class = "mainCard">
-                <img draggable="false" class = "mainCardImage" src = "images/parisScreen.jpg">
-                <div class = "pricingSection">
-                <h4> Paris Theme </h4>
-                <h4 class = "mainCardSubtitle"> Versa / Versa Lite </h4>
-                <a href = "https://gallery.fitbit.com/details/1ad0c505-725f-4845-8f6c-4df7bdc6125e" target="_blank"><div class = "pricingButton"> Free</div> </a>
-                </div>
-            </div>
+                    <img class = "cardImage" src = "images/sunsetStatsScreen.jpg">
 
+                    </div>
+                    <div class = "lowerCard">
+
+                    <h3 class = "cardTitle"> Simple Sunset Stats </h3>
+
+                    <div class = "infoSection">
+                    <div class = "cardInfo"> <i class="fas fa-check"></i> Versa </div>
+                    <div class = "cardInfo"> <i class="fas fa-check"></i> Versa Lite </div>
+                    <div class = "cardInfo"> <i class="fas fa-check"></i> Ionic </div>
+                    </div>
+
+                    <a href = "https://k-pay.io/code/?s=4C4F1129-FC50-3BE0-3CF9-7DBFB131797C&dsu=487897&p=3374-3433" target = "_blank" draggable="false"><button class = "cardButton"> $1.99 </button></a>
+
+                    </div>
+                </div>
+
+                <div class = "mainCardSoon">
+
+                    <div class = "markedButton"> Soon </div>
+
+                    <div class = "upperCard">
+    
+                        <img class = "cardImage" src = "images/triangleScreen.jpg">
+    
+                    </div>
+                    <div class = "lowerCard">
+    
+                        <h3 class = "cardTitle"> Triangles </h3>
+    
+                        <div class = "infoSection">
+                        <div class = "cardInfo"> <i class="fas fa-check"></i> Versa </div>
+                        <div class = "cardInfo"> <i class="fas fa-check"></i> Versa Lite </div>
+                        <div class = "cardInfo"> <i class="fas fa-check"></i> Ionic </div>
+                        </div>
+    
+                       <button class = "cardButton"> $1.99</button>
+    
+                    </div>
+                </div>
+                <div class = "mainCardSoon">
+
+                        <div class = "markedButton"> Soon </div>
+    
+                        <div class = "upperCard">
+        
+                            <img class = "cardImage" src = "images/circlesScreen.jpg">
+        
+                        </div>
+                        <div class = "lowerCard">
+        
+                            <h3 class = "cardTitle"> Circles </h3>
+        
+                            <div class = "infoSection">
+                            <div class = "cardInfo"> <i class="fas fa-check"></i> Versa </div>
+                            <div class = "cardInfo"> <i class="fas fa-check"></i> Versa Lite </div>
+                            <div class = "cardInfo"> <i class="fas fa-check"></i> Ionic </div>
+                            </div>
+        
+                            <button class = "cardButton"> $1.99</button>
+        
+                        </div>
+                    </div>
+
+                    <div class = "mainCard">
+
+                            <div class = "upperCard">
+            
+                            <img class = "cardImage" src = "images/frizzyScreen.jpg">
+            
+                            </div>
+                            <div class = "lowerCard">
+            
+                            <h3 class = "cardTitle"> Pink Frizzy </h3>
+            
+                            <div class = "infoSection">
+                            <div class = "cardInfo"> <i class="fas fa-check"></i> Versa </div>
+                            <div class = "cardInfo"> <i class="fas fa-check"></i> Versa Lite </div>
+                            <div class = "cardInfo"> <i class="fas fa-check"></i> Ionic </div>
+                            </div>
+            
+                            <a href = "https://k-pay.io/code/?s=4C4F1129-FC50-3BE0-3CF9-7DBFB131797C&dsu=487897&p=3374-3345" target = "_blank" draggable="false"><button class = "cardButton"> $1.99 </button></a>
+            
+                        </div>
+                    </div>
+
+                    <div class = "mainCard">
+
+                            <div class = "upperCard">
+            
+                            <img class = "cardImage" src = "images/summerStatsScreen.jpg">
+            
+                            </div>
+                            <div class = "lowerCard">
+            
+                            <h3 class = "cardTitle"> Simple Summer Stats </h3>
+            
+                            <div class = "infoSection">
+                            <div class = "cardInfo"> <i class="fas fa-check"></i> Versa </div>
+                            <div class = "cardInfo"> <i class="fas fa-check"></i> Versa Lite </div>
+                            <div class = "cardInfo"> <i class="fas fa-times"></i> Ionic </div>
+                            </div>
+            
+                            <a href = "https://k-pay.io/code/?s=4C4F1129-FC50-3BE0-3CF9-7DBFB131797C&dsu=487897&p=3374-3566" target = "_blank" draggable="false"><button class = "cardButton"> $1.49 </button></a>
+            
+                            </div>
+                    </div>
+                        
+                    <div class = "mainCard">
+
+                        <div class = "upperCard">
+                
+                            <img class = "cardImage" src = "images/nyStatsScreen.jpg">
+                
+                            </div>
+                            <div class = "lowerCard">
+                
+                            <h3 class = "cardTitle"> Simple NY Stats </h3>
+                
+                            <div class = "infoSection">
+                            <div class = "cardInfo"> <i class="fas fa-check"></i> Versa </div>
+                            <div class = "cardInfo"> <i class="fas fa-check"></i> Versa Lite </div>
+                            <div class = "cardInfo"> <i class="fas fa-times"></i> Ionic </div>
+                            </div>
+                
+                            <a href = "https://k-pay.io/code/?s=4C4F1129-FC50-3BE0-3CF9-7DBFB131797C&dsu=487897&p=3374-3705" target = "_blank" draggable="false"><button class = "cardButton"> $1.49 </button></a>
+                
+                                </div>
+                    </div>
+                            
+                    <div class = "mainCard">
+
+                            <div class = "markedButton"> New </div>
+
+                            <div class = "upperCard">
+                    
+                            <img class = "cardImage" src = "images/torontoScreen.jpg">
+                    
+                            </div>
+                            <div class = "lowerCard">
+                    
+                            <h3 class = "cardTitle"> Toronto Stats </h3>
+                    
+                            <div class = "infoSection">
+                            <div class = "cardInfo"> <i class="fas fa-check"></i> Versa </div>
+                            <div class = "cardInfo"> <i class="fas fa-check"></i> Versa Lite </div>
+                            <div class = "cardInfo"> <i class="fas fa-times"></i> Ionic </div>
+                            </div>
+                    
+                            <a href = "https://k-pay.io/code/?s=4C4F1129-FC50-3BE0-3CF9-7DBFB131797C&dsu=487897&p=3374-3793" target = "_blank" draggable="false"><button class = "cardButton"> $1.49 </button></a>
+                    
+                            </div>
+                    </div>
+
+                    <div class = "mainCard">
+
+                        <div class = "upperCard">
+                        
+                            <img class = "cardImage" src = "images/londonStatsScreen.jpg">
+                        
+                            </div>
+                            <div class = "lowerCard">
+                        
+                            <h3 class = "cardTitle"> Simple London Stats </h3>
+                        
+                            <div class = "infoSection">
+                            <div class = "cardInfo"> <i class="fas fa-check"></i> Versa </div>
+                            <div class = "cardInfo"> <i class="fas fa-check"></i> Versa Lite </div>
+                            <div class = "cardInfo"> <i class="fas fa-times"></i> Ionic </div>
+                            </div>
+                        
+                            <a href = "https://k-pay.io/code/?s=4C4F1129-FC50-3BE0-3CF9-7DBFB131797C&dsu=487897&p=3374-3354" target = "_blank" draggable="false"><button class = "cardButton"> $1.49 </button></a>
+                        
+                            </div>
+                    </div>
+
+                    <div class = "mainCard">
+
+                        <div class = "upperCard">
+                            
+                            <img class = "cardImage" src = "images/mountainStatsScreen.jpg">
+                            
+                            </div>
+                        <div class = "lowerCard">
+                            
+                            <h3 class = "cardTitle"> Simple Mountain Stats </h3>
+                            
+                            <div class = "infoSection">
+                            <div class = "cardInfo"> <i class="fas fa-check"></i> Versa </div>
+                            <div class = "cardInfo"> <i class="fas fa-check"></i> Versa Lite </div>
+                            <div class = "cardInfo"> <i class="fas fa-times"></i> Ionic </div>
+                        </div>
+                            
+                        <a href = "https://k-pay.io/code/?s=4C4F1129-FC50-3BE0-3CF9-7DBFB131797C&dsu=487897&p=3374-3353" target = "_blank" draggable="false"><button class = "cardButton"> $1.49 </button></a>
+                            
+                        </div>
+                    </div>
+
+                    <div class = "mainCard">
+
+                        <div class = "upperCard">
+                                
+                            <img class = "cardImage" src = "images/forestScreen.jpg">
+                                
+                        </div>
+                        <div class = "lowerCard">
+                                
+                            <h3 class = "cardTitle"> Deep Forest </h3>
+                                
+                            <div class = "infoSection">
+                            <div class = "cardInfo"> <i class="fas fa-check"></i> Versa </div>
+                            <div class = "cardInfo"> <i class="fas fa-check"></i> Versa Lite </div>
+                            <div class = "cardInfo"> <i class="fas fa-times"></i> Ionic </div>
+                        </div>
+                                
+                        <a href = "https://k-pay.io/code/?s=4C4F1129-FC50-3BE0-3CF9-7DBFB131797C&dsu=487897&p=3374-3317" target = "_blank" draggable="false"><button class = "cardButton"> $1.49 </button></a>
+                                
+                        </div>
+                    </div>
+                    <div class = "mainCard">
+
+                        <div class = "upperCard">
+                                    
+                            <img class = "cardImage" src = "images/parisScreen.jpg">
+                                    
+                        </div>
+                        <div class = "lowerCard">
+                                    
+                            <h3 class = "cardTitle"> Paris Theme </h3>
+                                    
+                            <div class = "infoSection">
+                            <div class = "cardInfo"> <i class="fas fa-check"></i> Versa </div>
+                            <div class = "cardInfo"> <i class="fas fa-check"></i> Versa Lite </div>
+                            <div class = "cardInfo"> <i class="fas fa-times"></i> Ionic </div>
+                        </div>
+                                    
+                        <a href = "https://gallery.fitbit.com/details/1ad0c505-725f-4845-8f6c-4df7bdc6125e" target = "_blank" draggable="false"><button class = "cardButton"> Free </button></a>
+                                    
+                        </div>
+                    </div>
+
+                                
+            
         </div>
 
-        <div class = "specialDivider" id = "giveawayScroll"></div>
 
-    </div>
+
 
                                             <!-- Giveaway Section -->
 
+    
     <div class = "giveawaySection">
+        
+        <div class = "giveawayDivider" id = "giveawayScroll"></div>
 
-        <h3 class = "giveawayTitle"> Giveaways and discount codes </h3>
+        <h3 class = "giveawaySectionTitle"> Discount codes and giveaways </h3>
 
-        <div class = "giveawayCardSection">
+        <div class = "giveawayCard">
+            
 
-                <div class = "giveawayCard">
+            <div class = "giveawayCardMain">
+                <p class = "giveawayTitle"> Discount Code: Wesbite launch - 1 </p>
+                <i class="fas fa-chevron-up"></i>
+            </div>
 
-                    <div class = "giveawayTextSection">
-                        <input type="checkbox" class = "giveawayCheckbox" id = "cc1">  <!-- Chnge for every card! -->
-                        <h4 class = "giveawayCardTitle"> Discount Code: Wesbite launch - 1 </h4>
-                        <p class = "giveawayCardPara">
-                            Our Website is now online! Thank you so much for your support! As a gift, we will give you a discount code, useable with every bundle on this website! But act quickly: this discount code is limited to 5 uses! <br>
-                        </p>
-                        <p class = "giveawayCardPara">
-                        <b> Discount code: </b> <em> WEBSITEBUNDLECODE </em> <br>
-                        <b> Discount: </b> <em> 15% </em> <br>
-                        <b> Products: </b> <em> all bundles </em> <br>
-                        <b> Max-uses: </b> <em> 5 </em> <br>
-                        <b> Expiration date: </b> <em> / </em>
-                        </p>
+            <div class = "giveawayHidden">
 
-                        <!-- remove .giveawayButton for promo code card -->
+            <p class = "giveawayCardPara"> Our Website is now online! Thank you so much for your support! As a gift, we will give you a discount code, useable with every bundle on this website! But act quickly: this discount code is limited to 5 uses!  </p>
 
+            <div class = "giveawayInformation">
+                <p class = "informationTitle"> Discount code: </p> 
+                <p class = "informationText"> WEBSITEBUNDLECODE  </p>
+            </div>
+            <div class = "giveawayInformation">
+                <p class = "informationTitle"> Discount: </p> 
+                <p class = "informationText"> 15% </p>
+            </div>
+            <div class = "giveawayInformation">
+                <p class = "informationTitle"> Products: </p> 
+                <p class = "informationText"> all bundles  </p>
+            </div>
+            <div class = "giveawayInformation">
+                <p class = "informationTitle"> Max-uses: </p> 
+                <p class = "informationText"> 5 </p>
+            </div>
+            <div class = "giveawayInformation">
+                    <p class = "informationTitle"> Expires: </p> 
+                    <p class = "informationText"> / </p>
+            </div>
+            
+            </div>
+
+            </div>
+
+            <div class = "giveawayCard">
+            
+
+                    <div class = "giveawayCardMain">
+                        <p class = "giveawayTitle"> Discount Code: Wesbite launch - 2 </p>
+                        <i class="fas fa-chevron-up" id = "giveawayIcon"></i>
                     </div>
-
-                    <label for = "cc1" class = "giveChk">
-                        <i class="fas fa-sort-down"></i>
-                    </label>
-
-                </div>
-
-                <div class = "giveawayCard">
-
-                        <div class = "giveawayTextSection">
-                            <input type="checkbox" class = "giveawayCheckbox" id = "cc2">  <!-- Chnge for every card! -->
-                            <h4 class = "giveawayCardTitle"> Discount Code: Wesbite launch - 2 </h4>
-                            <p class = "giveawayCardPara">
-                                Our Website is now online! Thank you so much for your support! As a gift, we will give you a discount code, useable with every clockface on this website! But act quickly: this discount code is limited to 10 uses! <br>
-                            </p>
-                            <p class = "giveawayCardPara">
-                            <b> Discount code: </b> <em> WEBSITELAUNCHCODE </em> <br>
-                            <b> Discount: </b> <em> 10% </em> <br>
-                            <b> Products: </b> <em> all single clockfaces </em> <br>
-                            <b> Max-uses: </b> <em> 10 </em> <br>
-                            <b> Expiration date: </b> <em> / </em>
-                            </p>
-
-                            <!-- remove .giveawayButton for promo code card -->
-
-                        </div>
-
-                        <label for = "cc2" class = "giveChk">
-                            <i class="fas fa-sort-down"></i>
-                        </label>
-
+        
+                    <div class = "giveawayHidden">
+        
+                    <p class = "giveawayCardPara"> Our Website is now online! Thank you so much for your support! As a gift, we will give you a discount code, useable with every clockface on this website! But act quickly: this discount code is limited to 10 uses!  </p>
+        
+                    <div class = "giveawayInformation">
+                        <p class = "informationTitle"> Discount code: </p> 
+                        <p class = "informationText"> WEBSITELAUNCHCODE  </p>
+                    </div>
+                    <div class = "giveawayInformation">
+                        <p class = "informationTitle"> Discount: </p> 
+                        <p class = "informationText"> 10% </p>
+                    </div>
+                    <div class = "giveawayInformation">
+                        <p class = "informationTitle"> Products: </p> 
+                        <p class = "informationText"> all clockfaces </p>
+                    </div>
+                    <div class = "giveawayInformation">
+                        <p class = "informationTitle"> Max-uses: </p> 
+                        <p class = "informationText"> 10 </p>
+                    </div>
+                    <div class = "giveawayInformation">
+                            <p class = "informationTitle"> Expires: </p> 
+                            <p class = "informationText"> / </p>
+                    </div>
+                    
+                    </div>
+        
                     </div>
 
         </div>
 
-        <div class = "specialDivider" id = "faqScroll"></div>
-
     </div>
+
 
                                         <!-- FAQ Section -->
 
-
-  <h3 class = "faqTitle"> Frequently asked questions </h3>
+    <div class = "faqDivider" id = "faqScroll"></div>
 
   <div class = "faqSection">
+    
+    <h3 class = "faqTitle"> Frequently asked questions </h3>
+
+    
 
     <div class = "questionMark">
         <h5 class = "questionTitle"> Is this a one-time purchase or do I have to pay monthly for the clockfaces? </h5>
@@ -399,7 +604,6 @@
         <p class = "answerPara"> For further questions you can check the k-pay FAQ <a href = "https://k-pay.io/faq" target="_blank"> here </a>. Or contact us via E-Mail. </p>
     </div>
 
-    <div class = "specialDivider" id = "contactScroll"></div>
 
   </div>
 
@@ -409,6 +613,7 @@
     <div class = "contactSection">
 
         <h3 class = "contactTitle"> Support and contact </h3>
+        <div class = "contactDivider" id = "contactScroll"></div>
         <p class = "contactPara"> Feel free to contact us if you have problems, questions or even improvement proposals. In case of support requests, please contact us only via E-Mail. Support requests via any other platform will not be answered.  </p>
 
         <div class = "contactImageSection">

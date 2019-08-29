@@ -26,6 +26,7 @@ $(document).ready(function(){
     }); // end link function (event)
 
     toggleAnswer();
+    toggleGiveawayCard();
 
 }); // end function
 
@@ -161,28 +162,28 @@ function openFilter(pTriggerElement){
       switch(pTriggerElement){
         case document.getElementById("firstFilter"):
         activeFilter.innerHTML = "all products";
-        activeFilter.style.background = "#6F8EE8";
-        activeFilter.style.boxShadow = "3px 5px #4B6FC6";
+        activeFilter.style.background = "#008ED3";
+        activeFilter.style.boxShadow = "3px 5px #0072B4";
         break;
         case document.getElementById("secondFilter"):
         activeFilter.innerHTML = "all bundles";
-        activeFilter.style.background = "#D389E1";
-        activeFilter.style.boxShadow = "3px 5px #AD66BB";
+        activeFilter.style.background = "#FF5F8F";
+        activeFilter.style.boxShadow = "3px 5px #DD3A70";
         break;
         case document.getElementById("thirdFilter"):
         activeFilter.innerHTML = "all clockfaces";
-        activeFilter.style.background = "#6F8EE8";
-        activeFilter.style.boxShadow = "3px 5px #4B6FC6";
+        activeFilter.style.background = "#008ED3";
+        activeFilter.style.boxShadow = "3px 5px #0072B4";
         break;
         case document.getElementById("fourthFilter"):
         activeFilter.innerHTML = "special products";
-        activeFilter.style.background = "#F83636";
-        activeFilter.style.boxShadow = "3px 5px #D4001D";
+        activeFilter.style.background = "#FF5F8F";
+        activeFilter.style.boxShadow = "3px 5px #DD3A70";
         break;
         case document.getElementById("fithFilter"):
         activeFilter.innerHTML = "coming soon";
-        activeFilter.style.background = "#00DE8D";
-        activeFilter.style.boxShadow = "3px 5px #00B165";
+        activeFilter.style.background = "#00B165";
+        activeFilter.style.boxShadow = "3px 5px #009784";
         break;
       }
 
@@ -237,11 +238,24 @@ function toggleCard(pType){
   }
 }
 
+//giveaway Section
+
+function toggleGiveawayCard(){
+
+  $(".giveawayHidden").hide();
+  $(".giveawayCardMain i").on("click",function(){
+
+    $(this).parent().siblings(".giveawayHidden").slideToggle(500);
+
+  });
+
+}
+
 
 // faqSection
 
 
-function toggleAnswer(pTriggerElement){
+function toggleAnswer(){
 
   $(".answerPara").hide();
   $(".questionTitle").on("click",function(){

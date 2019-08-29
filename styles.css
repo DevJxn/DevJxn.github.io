@@ -5,6 +5,7 @@ body{
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
     background: #f1f2f6;
+    user-select: none;
 }
 
 #onTopButton{
@@ -125,7 +126,7 @@ body{
     margin: auto;
 }
 
-.divider, .specialDivider{
+.divider{
     border: 1px solid #6F94BC;
     width: 80%;
     position: relative;
@@ -251,179 +252,173 @@ h2{
 }
 
 .filter:hover{
-  background-color: #4B6FC6;
-  box-shadow: 3px 5px #2153A4;
+  background-color: #008ED3;
+  box-shadow: 3px 5px #0072B4;
   color: white;
 }
 
 #activeFilter{
   display: block;
-  background-color: #6F8EE8;
-  box-shadow: 3px 5px #4B6FC6;
+  background-color: #008ED3;
+  box-shadow: 3px 5px #0072B4;
   color: white;
   font-weight: normal;
 }
 
+/* Main Cards */
+
+
 .mainCardSection{
+    max-width: 80%;
+    position: relative;
+    top: 55vh;
+    margin: 50px auto 50px auto;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    max-width: 80%;
-    position: relative;
-    top: 60vh;
-    margin: auto;
 }
 
-.mainCard,.mainCardBundle,.mainCardSoon{
+.mainCard, .mainCardBundle, .mainCardSoon{
     width: 300px;
     height: 400px;
-    background: #DADDE2;
-    box-shadow: 10px 5px 3px #B1BDC5;
-    margin-bottom: 100px;
-    margin-left: 20px;
-    margin-right: 20px;
-    border-radius: 20px;
+    margin: 25px 25px 75px 25px;
     position: relative;
 }
 
-.markedButton{
-    background-color: #6F8EE8;
-    box-shadow: 3px 5px #4B6FC6;
-    width: 6em;
-    height: 2.5em;
-    line-height: 2.5em;
-    z-index: 1;
-    border-radius: 15px;
-    text-align: center;
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: -20px;
-    left: -45px;
-    margin-bottom: -6vh;
-    cursor: default;
+.upperCard{
+    height: 55%;
+    background-color:#3EB3FB;
+    border-radius: 10px 10px 0px 0px;
+    position: relative;
 }
 
 .slideButtonLeft{
-  position: absolute;
-  left: 5px;
-  top: 90px;
-  color: #D389E1;
-  font-size: 48px;
-  z-index: 1;
-  cursor: pointer;
-  width: 40px;
-  text-align: left;
-  transition: color 0.5s;
+    position: absolute;
+    top: 50%;
+    left: 10%;
 }
 
 .slideButtonRight{
-  position: absolute;
-  right: 5px;
-  top: 90px;
-  color: #D389E1;
-  font-size: 48px;
-  z-index: 1;
-  cursor: pointer;
-  width: 40px;
-  text-align: right;
-  transition: color 0.5s;
+    position: absolute;
+    top: 50%;
+    right: 10%;
 }
 
-.slideButtonLeft:hover,.slideButtonRight:hover{
-    color: #AD66BB;
+.fas.fa-chevron-left{
+    position: absolute;
+    font-size: 46px;
+    color: white;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
 }
 
-.mainCardBundle .markedButton{
-    background-color: #D389E1;
-    box-shadow: 3px 5px #AD66BB;
+.fas.fa-chevron-right{
+    position: absolute;
+    font-size: 46px;
+    color: white;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
 }
 
-.mainCardSoon .markedButton{
-  background-color: #00DE8D;
-  box-shadow: 3px 5px #00B165;
-}
-
-.mainCard a, .mainCardBundle a, .mainCardSoon a{
-    text-decoration: none;
-}
-
-.mainCardBundle .pricingSection{
-    background-color: #D389E1;
-}
-
-.mainCardSoon .pricingSection{
-  background-color: #00DE8D;
-}
-
-.mainCardImage{
-    width: 200px;
-    height: auto;
+.cardImage{
+    width: 150px;
+    height: 150px;
     position: relative;
     left: 50%;
-    transform: translateX(-50%);
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 20px;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    border: 5px solid white;
+    user-select: none;
 }
 
-.pricingSection{
-    border-radius: 0px 0px 20px 20px;
-    background-color: #6F8EE8;
-    padding-top: 20px;
-    padding-bottom: 15px;
-    font-weight: normal;
-    text-align: center;
-}
-
-.pricingSection h4:not(.mainCardSubtitle){
+.markedButton{
+    position: absolute;
+    z-index: 1;
+    background-color: #008ED3;
     color: white;
     font-size: 20px;
+    border-radius: 10px;
+    width: 6em;
+    height: 2.5em;
+    line-height: 2.5em;
     text-align: center;
-    position: relative;
-    top: 2vh;
-    margin-top: -10px;
+    left: -30px;
+    top: -20px;
 }
 
-.mainCardSubtitle{
-    color: white;
-    font-size: 18px;
+.lowerCard{
+    height: 45%;
+    position: relative;
+    background-color: #008ED3;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.cardTitle{
+    margin: 0;
+    padding: 0;
     text-align: center;
     position: relative;
-    margin-top: -18px;
     top: 2vh;
+    color: white;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.cardPrice{
+    color: white;
+    text-align: center;
+    position: relative;
+    font-size: 20px;
+    top: 2.5vh;
+    margin: 0;
     font-style: italic;
 }
 
-.pricingButton{
-    background: white;
+.infoSection{
+    display: flex;
+    color: white;
     position: relative;
-    border-radius: 20px;
-    text-align: center;
-    line-height: 2.5em;
+    top: 30px;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.cardInfo{
+    font-size: 16px;
+    background-color: #919191;
+    padding: 2px 7px 2px 7px;
+}
+
+.fas.fa-check{
+    color: #00DB95;
+}
+
+.fas.fa-times{
+    color: #FF555C;
+}
+
+.cardButton{
+    position: relative;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 22px;
+    padding: 5px 35px 5px 35px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: white;
+    color: #008ED3;
     font-weight: bold;
-    color: #008EC6;
-    box-shadow: 2px 5px #DDDDDD;
+    box-shadow: 3px -3px #DADDE2;
     cursor: pointer;
     transition: all 0.5s;
-    display: inline;
-    padding: 10px 15px 10px 15px;
 }
 
-.pricingButton:hover{
-    color: #00ACCF;
-    background: #DDDDDD;
-    box-shadow: 2px 5px #A6A6A6;
-}
-
-.mainCardSoon .pricingButton{
-  color: #00DE8D;
-  cursor: not-allowed;
-}
-
-.mainCardBundle .pricingButton{
-  color: #D389E1;
+.cardButton:hover{
+    background-color: #DADDE2;
+    box-shadow: 3px -3px #B1BDC5;
 }
 
 .specialDivider{
@@ -431,122 +426,149 @@ h2{
     top: 55vh;
 }
 
-/*  Giveaway Section */
 
-.giveawayTitle{
-    text-align: center;
-    font-size: 22px;
-    position: relative;
-    top: 55vh;
-    font-weight: normal;
+/* special cards */
+
+.mainCardBundle .markedButton{
+    background-color: #B80053;
 }
 
-.giveawayCardSection{
-    width: 60%;
-    margin: auto;
-    position: relative;
-    top: 60vh;
-    margin-bottom: 150px;
+.mainCardSoon .markedButton{
+    background-color: #009784;
 }
 
-.giveawayCard{
-    background: #DADDE2;
-    box-shadow: 10px 5px 3px#B1BDC5;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px;
+.mainCardBundle .upperCard{
+    background-color: #DB006F;
 }
 
-.giveawayCard i{
-    font-size: 48px;
+.mainCardBundle .lowerCard{
+    background-color: #B80053;
 }
 
-.giveawayCheckbox{
-    display: none;
+.mainCardBundle .cardButton{
+    color: #B80053;
 }
 
-.giveawayCardTitle{
-    margin-left: 10px;
-    margin-right: 15px;
+.mainCardSoon .upperCard{
+    background-color: #00AF68;
 }
 
-.giveChk i{
-    margin-right: 20px;
+.mainCardSoon .lowerCard{
+    background-color: #009784;
 }
 
-.giveChk{
-    cursor: pointer;
-}
-
-.giveawayCardPara{
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height 1s cubic-bezier(0,1,0,1);
-    margin-top: -15px;
-    margin-left: 10px;
-    margin-bottom: 20px;
-}
-
-.giveawayButton, .expiredButton , .soonButton{
-    width: 5em;
-    height: 1.5em;
-    line-height: 1.5em;
-    background-color: #6F8EE8;
-    box-shadow: 3px 5px 3px #4B6FC6;
-    text-align: center;
-    margin-left: 10px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    font-size: 20px;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.5s;
-
-}
-
-.giveawayTextSection a{
-  text-decoration: none;
-}
-
-.soonButton{
-    background-color: #FFF74C;
-    box-shadow: 3px 5px 3px #C5C200;
-    color: black;
-    cursor: cell;
-}
-
-.expiredButton{
-    background-color: #FB775D;
-    box-shadow: 3px 5px 3px #D2543E;
+.mainCardSoon .cardButton{
+    color: #009784;
     cursor: not-allowed;
 }
 
-.giveawayButton:hover{
-    background-color: #4B6FC6;
-    box-shadow: 3px 5px 3px #2153A4;
+
+/*  Giveaway Section */
+
+
+.giveawaySection{
+    position: relative;
+    top: 65vh;
+    margin-bottom: 100px;
 }
 
-.giveawayCheckbox:checked ~ .giveawayCardPara{
-    max-height: 1000px;
-    transition: max-height 1s ease-in-out;
+.giveawaySectionTitle{
+    font-size: 22px;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 100px;
 }
+
+.giveawayCard{
+    max-width: 60%;
+    margin: auto auto 50px auto;
+    background-color: #6F8EE8;
+    color: white;
+    border-radius: 5px;
+}
+
+.giveawayCardMain{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #4F5D8E;
+}
+
+.giveawayTitle{
+    font-size: 20px;
+    margin: 25px 0px 25px 10px;
+}
+
+.giveawayCardMain i{
+    font-size: 32px;
+    margin: 25px 20px 25px 0px;
+    transform: rotate(180deg);
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+.giveawayHidden{
+    padding-bottom: 10px;
+}
+
+.giveawayCardPara{
+    margin: 25px 10px 45px 10px;
+    font-size: 18px;
+}
+
+.giveawayInformation{
+    margin: 25px 0px 25px 0px;
+    display: flex;
+    justify-content: start;
+}
+
+.giveawayInformation p{
+    margin: -15px 10px 0px 10px;
+    font-size: 18px;
+}
+
+.informationTitle{
+    text-decoration: underline;
+}
+
+.informationText{
+    font-style: italic;
+}
+
+/* .giveawayButton{                                                             !!! Activate for Giveaway !!!
+    margin: 25px 0px 25px 10px;
+    border: none;
+    font-size: 20px;
+    width: 7em;
+    height: 2em;
+    border-radius: 10px;
+    box-shadow: 3px -4px #B1BDC5;
+    background-color: white;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.giveawayButton:hover{
+    background-color: #B1BDC5;
+    box-shadow: 3px -4px #A6A6A6;
+} /*
+
 
 /* FAQ Section */
 
 .faqTitle{
   text-align: center;
   position: relative;
-  top: 55vh;
   font-size: 22px;
   font-weight: normal;
 }
 
 .faqSection{
-  max-width: 80%;
+  max-width: 60%;
   background-color: #DADDE2;
   margin: auto;
   position: relative;
-  top: 60vh;
+  top: 80vh;
   padding: 10px;
   border-radius: 15px;
 }
@@ -570,14 +592,9 @@ h2{
 
 /* Contact Section */
 
-#contactScroll{
-  position: relative;
-  top: 15vh;
-}
-
 .contactSection{
     position: relative;
-    top: 75vh;
+    top: 95vh;
 }
 
 .contactTitle{
@@ -615,9 +632,44 @@ h2{
     width: 100%;
     min-height: 200px;
     position: relative;
-    top: 90vh;
+    top: 110vh;
 }
 
+
+
+/* divider */
+
+.cardDivider{
+    border: 1px solid #6F94BC;
+    width: 80%;
+    position: relative;
+    top: 50vh;
+    margin: auto;
+}
+
+.giveawayDivider{
+    border: 1px solid #6F94BC;
+    width: 80%;
+    position: relative;
+    top: 0vh;
+    margin: auto;
+}
+
+.faqDivider{
+    border: 1px solid #6F94BC;
+    width: 80%;
+    position: relative;
+    top: 70vh;
+    margin: auto;
+}
+
+.contactDivider{
+    border: 1px solid #6F94BC;
+    width: 80%;
+    position: relative;
+    top: -8vh;
+    margin: auto;
+}
 
 
 /* Responsive (1000px) */
@@ -650,15 +702,26 @@ h2{
 
     /* Main Card Section (1000px responsive) */
 
+    .mainCardSection{
+        max-width: 90%;
+    }
+
     .mainCard{
         margin-bottom: 75px;
     }
 
     /* Giveaway Section  (1000px responsive) */
 
-    .giveawayCardSection{
+    .giveawayCard{
         max-width: 80%;
     }
+
+    /* FAQ Section (1000px responsive) */
+
+    .faqSection{
+        max-width: 80%;
+    }
+    
 
     /* Contact Section (1000px responsive) */
 
@@ -712,9 +775,8 @@ h2{
         max-width: 100%;
     }
 
-    .mainCard,.mainCardBundle{
-      margin-left: 10px;
-      margin-right: 10px;
+    .mainCard,.mainCardBundle, .mainCardSoon{
+      margin: 20px 20px 50px 20px;
     }
 
     .markedButton{
@@ -723,11 +785,19 @@ h2{
 
     /* Giveaway Section (640px responsive) */
 
-    .giveawayCardSection{
-      width: 100%;
+    .giveawayCard{
+        max-width: 90%;
+    }
+
+    /* FAQ Section (1000px responsive) */
+
+    .faqSection{
+        max-width: 90%;
     }
 
     /* Contact Section (640px responsive) */
+
+    
 
     .contactImage{
         width: 50px;
