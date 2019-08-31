@@ -84,16 +84,18 @@ function getBundleName(pBundleName,pTriggerElement){
 
   var rightButtonArray = document.getElementsByClassName("slideButtonRight");
   var leftButtonArray = document.getElementsByClassName("slideButtonLeft");
+  var i = 0;
 
-  for(i = 0; i<rightButtonArray.length;i++){
+  for(i; i<rightButtonArray.length;i++){
     if(rightButtonArray[i] === pTriggerElement){
     nextImage(pBundleName,imageLinks);
     return;
     }
   }
 
-  for(i = 0; i<leftButtonArray.length;i++){
-    if(leftButtonArray[i] === pTriggerElement){
+  var j = 0;
+  for(j; j<leftButtonArray.length;j++){
+    if(leftButtonArray[j] === pTriggerElement){
       previousImage(pBundleName,imageLinks);
       return;
     }
@@ -108,8 +110,8 @@ function getBundleName(pBundleName,pTriggerElement){
 // next or previous image loop
 
 function nextImage(pBundleName,pImageArray){
-
-  for(i = 0; i < pImageArray.length ;i++){
+  var i = 0;
+  for(i; i < pImageArray.length ;i++){
 
       if(pImageArray[i] === pBundleName.getAttribute("src")){
 
@@ -127,7 +129,8 @@ function nextImage(pBundleName,pImageArray){
 
 function previousImage(pBundleName,pImageArray){
 
-  for(i = pImageArray.length-1; i >= 0 ; i--){
+  var i = pImageArray.length-1;
+  for(i; i >= 0 ; i--){
 
       if(pImageArray[i] === pBundleName.getAttribute("src")){
 
@@ -151,7 +154,8 @@ function openFilter(pTriggerElement){
   var activeFilter = document.getElementById("activeFilter");
 
   var elements = document.getElementsByClassName("filter");
-  for(i = 0; i<elements.length;i++){
+  var i = 0
+  for(i; i<elements.length;i++){
   if(elements[i] !== document.getElementById("activeFilter")){
     if(elements[i].style.display === "block"){
 

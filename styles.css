@@ -5,7 +5,18 @@ body{
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
     background: #f1f2f6;
-    user-select: none;
+    -webkit-touch-callout: none; /* iOS Safari */
+   -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                    supported by Chrome and Opera */
+}
+
+.wrapper{
+  max-width: 1345px;
+  margin: auto;
 }
 
 #onTopButton{
@@ -97,6 +108,7 @@ body{
     position: relative;
     top: 15vh;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .header{
@@ -124,20 +136,13 @@ body{
     text-align: center;
     font-size: 18px;
     margin: auto;
-}
-
-.divider{
-    border: 1px solid #6F94BC;
-    width: 80%;
-    position: relative;
-    top: 10vh;
-    margin: auto;
+    margin-bottom: 10px;
 }
 
 h2{
     text-align: center;
     position: relative;
-    top: 15vh;
+    top: 30vh;
     width: 50%;
     margin: auto;
 }
@@ -145,12 +150,12 @@ h2{
 .button{
     background-color: #41AAF9;
     position: relative;
-    border-radius: 20px;
+    border-radius: 10px;
     font-size: 22px;
     transition: background-color 0.5s;
     cursor: pointer;
     display: inline;
-    padding: 15px 25px 15px 25px;
+    padding: 15px 35px 15px 35px;
   }
 
 .introduction a{
@@ -166,6 +171,10 @@ h2{
 }
 
 /* Advantage card section */
+
+.mainSection{
+  margin: 20px;
+}
 
 .advTitle{
   font-weight: normal;
@@ -359,27 +368,17 @@ h2{
     padding: 0;
     text-align: center;
     position: relative;
-    top: 2vh;
+    top: 10%;
     color: white;
     font-size: 22px;
     font-weight: normal;
-}
-
-.cardPrice{
-    color: white;
-    text-align: center;
-    position: relative;
-    font-size: 20px;
-    top: 2.5vh;
-    margin: 0;
-    font-style: italic;
 }
 
 .infoSection{
     display: flex;
     color: white;
     position: relative;
-    top: 30px;
+    top: 17%;
     justify-content: space-around;
     margin: 10px;
 }
@@ -401,6 +400,7 @@ h2{
 .cardButton{
     position: relative;
     top: 50px;
+    -moz-top: 30%;
     left: 50%;
     transform: translateX(-50%);
     font-size: 22px;
@@ -534,7 +534,7 @@ h2{
     font-style: italic;
 }
 
-/* .giveawayButton{                                                         
+/* .giveawayButton{
     margin: 25px 0px 25px 10px;
     border: none;
     font-size: 20px;
@@ -639,6 +639,14 @@ h2{
 
 /* divider */
 
+.divider{
+  border: 1px solid #6F94BC;
+  width: 80%;
+  position: relative;
+  top: 25vh;
+  margin: auto;
+}
+
 .cardDivider{
     border: 1px solid #6F94BC;
     width: 80%;
@@ -667,7 +675,7 @@ h2{
     border: 1px solid #6F94BC;
     width: 80%;
     position: relative;
-    top: -8vh;
+    top: -10vh;
     margin: auto;
 }
 
