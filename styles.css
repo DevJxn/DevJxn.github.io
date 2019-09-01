@@ -20,7 +20,7 @@ body{
 }
 
 #onTopButton{
-    color: #0086D9;
+    color: #0073FF;
     position: fixed;
     right: 10px;
     top: 90%;
@@ -34,7 +34,8 @@ body{
     position: fixed;
     width: 100%;
     z-index: 10;
-    background: #0086D9;
+    background: #0073FF;
+    opacity: 0.95;
     display: flex;
     justify-content: space-between;
 }
@@ -48,8 +49,8 @@ body{
 }
 
 .logo{
-    width: 80px;
-    height: 80px;;
+    width: 65px;
+    height: 65px;;
     padding: 0;
     margin: 0;
     position: relative;
@@ -57,7 +58,7 @@ body{
 
 .navBar li{
     margin: 10px;
-    margin-top: 25px;
+    margin-top: 17px;
     line-height: 20px;
     font-size: 20px;
     display: inline-flex;
@@ -75,6 +76,7 @@ body{
 .navBar li a:hover{
     color: black;
     background-color: white;
+    border-radius: 5px;
 }
 
 .iconSection{
@@ -148,11 +150,11 @@ h2{
 }
 
 .button{
-    background-color: #41AAF9;
+    background: linear-gradient(90deg, rgba(0,115,255,1) 0%, rgba(0,67,196,1) 100%);
     position: relative;
     border-radius: 10px;
     font-size: 22px;
-    transition: background-color 0.5s;
+    transition: all 0.5s;
     cursor: pointer;
     display: inline;
     padding: 15px 35px 15px 35px;
@@ -167,7 +169,7 @@ h2{
 }
 
 .button:hover {
-    background-color:#0086D9;
+    background: linear-gradient(90deg, rgba(0,90,225,1) 0%, rgba(0,46,167,1) 100%);
 }
 
 /* Advantage card section */
@@ -210,7 +212,7 @@ h2{
 
 .advantageCard i{
     font-size: 5em;
-    color: #0086D9;
+    color: #0073FF;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -257,7 +259,6 @@ h2{
   display: none;
   position: relative;
   margin: auto;
-  box-shadow: 3px 5px #B1BDC5;
 }
 
 .filter:hover{
@@ -296,7 +297,7 @@ h2{
 
 .upperCard{
     height: 55%;
-    background-color:#3EB3FB;
+    background-color:#0073FF;
     border-radius: 10px 10px 0px 0px;
     position: relative;
 }
@@ -344,7 +345,7 @@ h2{
 .markedButton{
     position: absolute;
     z-index: 1;
-    background-color: #008ED3;
+    background: linear-gradient(0deg, rgba(0,157,255,1) 0%, rgba(0,209,236,1) 100%);
     color: white;
     font-size: 20px;
     border-radius: 10px;
@@ -359,7 +360,7 @@ h2{
 .lowerCard{
     height: 45%;
     position: relative;
-    background-color: #008ED3;
+    background-color: #005AE1;
     border-radius: 0px 0px 10px 10px;
 }
 
@@ -385,7 +386,7 @@ h2{
 
 .cardInfo{
     font-size: 16px;
-    background-color: #919191;
+    background-color: #444655;
     padding: 2px 7px 2px 7px;
 }
 
@@ -430,11 +431,11 @@ h2{
 /* special cards */
 
 .mainCardBundle .markedButton{
-    background-color: #B80053;
+    background: linear-gradient(0deg, rgba(221,58,112,1) 0%, rgba(255,95,143,1) 100%);
 }
 
 .mainCardSoon .markedButton{
-    background-color: #009784;
+    background: linear-gradient(0deg, rgba(78,182,140,1) 0%, rgba(134,212,145,1) 100%);
 }
 
 .mainCardBundle .upperCard{
@@ -480,9 +481,9 @@ h2{
 }
 
 .giveawayCard{
-    max-width: 60%;
+    max-width: 80%;
     margin: auto auto 50px auto;
-    background-color: #6F8EE8;
+    background-color: #0073FF;
     color: white;
     border-radius: 5px;
 }
@@ -490,7 +491,6 @@ h2{
 .giveawayCardMain{
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #4F5D8E;
 }
 
 .giveawayTitle{
@@ -561,10 +561,11 @@ h2{
   position: relative;
   font-size: 22px;
   font-weight: normal;
+  margin-bottom: 25px;
 }
 
 .faqSection{
-  max-width: 60%;
+  max-width: 80%;
   background-color: #DADDE2;
   margin: auto;
   position: relative;
@@ -574,12 +575,12 @@ h2{
 }
 
 .questionMark{
-  margin: 20px;
+  margin: 25px;
 }
 
 .questionTitle{
   font-weight: normal;
-  font-size: 18px;
+  font-size: 20px;
   color: blue;
   text-decoration: underline;
   cursor: pointer;
@@ -588,6 +589,10 @@ h2{
 
 .faqAnswer{
   overflow: hidden;
+}
+
+.answerPara{
+    font-size: 18px;
 }
 
 /* Contact Section */
@@ -641,7 +646,7 @@ h2{
 
 .divider{
   border: 1px solid #6F94BC;
-  width: 80%;
+  width: 90%;
   position: relative;
   top: 25vh;
   margin: auto;
@@ -649,7 +654,6 @@ h2{
 
 .cardDivider{
     border: 1px solid #6F94BC;
-    width: 80%;
     position: relative;
     top: 50vh;
     margin: auto;
@@ -657,7 +661,6 @@ h2{
 
 .giveawayDivider{
     border: 1px solid #6F94BC;
-    width: 80%;
     position: relative;
     top: 0vh;
     margin: auto;
@@ -665,7 +668,6 @@ h2{
 
 .faqDivider{
     border: 1px solid #6F94BC;
-    width: 80%;
     position: relative;
     top: 70vh;
     margin: auto;
@@ -673,7 +675,6 @@ h2{
 
 .contactDivider{
     border: 1px solid #6F94BC;
-    width: 80%;
     position: relative;
     top: -10vh;
     margin: auto;
