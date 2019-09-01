@@ -646,13 +646,14 @@ h2{
 
 .divider{
   border: 1px solid #6F94BC;
-  width: 90%;
+  width: 80%;
   position: relative;
   top: 25vh;
   margin: auto;
 }
 
 .cardDivider{
+    max-width:80%;
     border: 1px solid #6F94BC;
     position: relative;
     top: 50vh;
@@ -660,6 +661,7 @@ h2{
 }
 
 .giveawayDivider{
+    max-width:80%;
     border: 1px solid #6F94BC;
     position: relative;
     top: 0vh;
@@ -667,6 +669,7 @@ h2{
 }
 
 .faqDivider{
+    max-width:80%;
     border: 1px solid #6F94BC;
     position: relative;
     top: 70vh;
@@ -674,6 +677,7 @@ h2{
 }
 
 .contactDivider{
+    max-width:80%;
     border: 1px solid #6F94BC;
     position: relative;
     top: -10vh;
