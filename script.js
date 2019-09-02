@@ -69,7 +69,7 @@ function getBundleName(pBundleName,pTriggerElement){
                       "images/cubeScreen.jpg"];
 
   }else if(pBundleName === document.getElementById("simpleStatsBundle")){
-    var imageLinks = ["images/simpleBundleScreen.jpg",   //change to simple screen
+    var imageLinks = ["images/simpleBundleScreen.jpg",
                       "images/oceanStatsScreen.jpg",
                       "images/sunsetStatsScreen.jpg",
                       "images/summerStatsScreen.jpg",
@@ -77,10 +77,15 @@ function getBundleName(pBundleName,pTriggerElement){
                       "images/londonStatsScreen.jpg",
                       "images/mountainStatsScreen.jpg"];
   }else if(pBundleName === document.getElementById("cityBundle")){
-    var imageLinks = ["images/cityBundleScreen.jpg",   //change to simple screen
+    var imageLinks = ["images/cityBundleScreen.jpg",
                       "images/nyStatsScreen.jpg",
                       "images/torontoScreen.jpg",
                       "images/londonStatsScreen.jpg"];
+  }else if(pBundleName === document.getElementById("shapesBundle")){
+    var imageLinks = ["images/shapesBundleScreen.jpg",
+                      "images/triangleScreen.jpg",
+                      "images/circlesScreen.jpg",
+                      "images/cubeScreen.jpg"];
   }
 
   var rightButtonArray = document.getElementsByClassName("slideButtonRight");
