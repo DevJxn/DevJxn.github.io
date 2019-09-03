@@ -35,8 +35,10 @@ window.onscroll = function() {onTopFunction()};
 function onTopFunction(){       // function for topButton
     if(document.body.scrollTop > 300 || document.documentElement.scrollTop > 300){
         document.getElementById("onTopButton").style.display = "block";
+        document.getElementById("navBarSection").style.opacity = "0.9";
     }else{
         document.getElementById("onTopButton").style.display = "none";
+        document.getElementById("navBarSection").style.opacity = "1";
     }
 
 }
@@ -65,8 +67,7 @@ function getBundleName(pBundleName,pTriggerElement){
                       "images/forestScreen.jpg",
                       "images/torontoScreen.jpg",
                       "images/circlesScreen.jpg",
-                      "images/triangleScreen.jpg",
-                      "images/cubeScreen.jpg"];
+                      "images/triangleScreen.jpg"];
 
   }else if(pBundleName === document.getElementById("simpleStatsBundle")){
     var imageLinks = ["images/simpleBundleScreen.jpg",
@@ -81,7 +82,7 @@ function getBundleName(pBundleName,pTriggerElement){
                       "images/nyStatsScreen.jpg",
                       "images/torontoScreen.jpg",
                       "images/londonStatsScreen.jpg"];
-  }else if(pBundleName === document.getElementById("shapesBundle")){
+  }else if(pBundleName == document.getElementById("shapesBundle")){
     var imageLinks = ["images/shapesBundleScreen.jpg",
                       "images/triangleScreen.jpg",
                       "images/circlesScreen.jpg",
@@ -172,28 +173,28 @@ function openFilter(pTriggerElement){
       switch(pTriggerElement){
         case document.getElementById("firstFilter"):
         activeFilter.innerHTML = "all products";
-        activeFilter.style.background = "#008ED3";
-        activeFilter.style.boxShadow = "3px 5px #0072B4";
+        activeFilter.style.background = "linear-gradient(90deg, rgba(27,144,220,1) 0%, rgba(0,87,156,1) 100%)";
+        activeFilter.style.boxShadow = "3px 5px rgba(0,87,156,1)";
         break;
         case document.getElementById("secondFilter"):
         activeFilter.innerHTML = "all bundles";
-        activeFilter.style.background = "#FF5F8F";
-        activeFilter.style.boxShadow = "3px 5px #DD3A70";
+        activeFilter.style.background = "linear-gradient(90deg, rgba(227,46,188,1) 0%, rgba(162,0,130,1) 100%)";
+        activeFilter.style.boxShadow = "3px 5px rgba(162,0,130,1)";
         break;
         case document.getElementById("thirdFilter"):
         activeFilter.innerHTML = "all clockfaces";
-        activeFilter.style.background = "#008ED3";
-        activeFilter.style.boxShadow = "3px 5px #0072B4";
+        activeFilter.style.background = "linear-gradient(90deg, rgba(27,144,220,1) 0%, rgba(0,87,156,1) 100%)";
+        activeFilter.style.boxShadow = "3px 5px rgba(0,87,156,1)";
         break;
         case document.getElementById("fourthFilter"):
         activeFilter.innerHTML = "special products";
-        activeFilter.style.background = "#FF5F8F";
-        activeFilter.style.boxShadow = "3px 5px #DD3A70";
+        activeFilter.style.background = "linear-gradient(90deg, rgba(227,46,188,1) 0%, rgba(162,0,130,1) 100%)";
+        activeFilter.style.boxShadow = "3px 5px rgba(162,0,130,1)";
         break;
         case document.getElementById("fithFilter"):
         activeFilter.innerHTML = "coming soon";
-        activeFilter.style.background = "#00B165";
-        activeFilter.style.boxShadow = "3px 5px #009784";
+        activeFilter.style.background = "linear-gradient(90deg, rgba(35,229,35,1) 0%, rgba(0,139,0,1) 100%)";
+        activeFilter.style.boxShadow = "3px 5px rgba(0,139,0,1)";
         break;
       }
 

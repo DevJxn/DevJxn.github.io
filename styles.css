@@ -20,7 +20,7 @@ body{
 }
 
 #onTopButton{
-    color: #0073FF;
+    color: rgba(38,110,209,1);
     position: fixed;
     right: 10px;
     top: 90%;
@@ -34,8 +34,8 @@ body{
     position: fixed;
     width: 100%;
     z-index: 10;
-    background: #0073FF;
-    opacity: 0.95;
+    background: linear-gradient(90deg, rgba(0,67,196,1) 0%,rgba(0,115,255,1) 100%);
+    opacity: 1;
     display: flex;
     justify-content: space-between;
 }
@@ -212,7 +212,7 @@ h2{
 
 .advantageCard i{
     font-size: 5em;
-    color: #0073FF;
+    color: rgba(27,144,220,1);
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -262,15 +262,15 @@ h2{
 }
 
 .filter:hover{
-  background-color: #008ED3;
-  box-shadow: 3px 5px #0072B4;
+  background: linear-gradient(90deg, rgba(27,144,220,1) 0%, rgba(0,87,156,1) 100%);
+  box-shadow: 3px 5px rgba(0,87,156,1);
   color: white;
 }
 
 #activeFilter{
   display: block;
-  background-color: #008ED3;
-  box-shadow: 3px 5px #0072B4;
+  background: linear-gradient(90deg, rgba(27,144,220,1) 0%, rgba(0,87,156,1) 100%);
+  box-shadow: 3px 5px rgba(0,87,156,1);
   color: white;
   font-weight: normal;
 }
@@ -297,7 +297,7 @@ h2{
 
 .upperCard{
     height: 55%;
-    background-color:#0073FF;
+    background: linear-gradient(90deg, rgba(27,144,220,1) 0%, rgba(0,87,156,1) 100%);
     border-radius: 10px 10px 0px 0px;
     position: relative;
 }
@@ -360,7 +360,7 @@ h2{
 .lowerCard{
     height: 45%;
     position: relative;
-    background-color: #005AE1;
+    background:linear-gradient(90deg, rgba(38,110,209,1) 0%, rgba(0,29,109,1) 100%);
     border-radius: 0px 0px 10px 10px;
 }
 
@@ -410,7 +410,7 @@ h2{
     outline: none;
     border-radius: 5px;
     background-color: white;
-    color: #008ED3;
+    color: #00579c;
     font-weight: bold;
     box-shadow: 3px -3px #DADDE2;
     cursor: pointer;
@@ -431,35 +431,35 @@ h2{
 /* special cards */
 
 .mainCardBundle .markedButton{
-    background: linear-gradient(0deg, rgba(221,58,112,1) 0%, rgba(255,95,143,1) 100%);
+    background: linear-gradient(0deg, rgba(217,0,151,1) 0%, rgba(253,48,182,1) 100%);
 }
 
 .mainCardSoon .markedButton{
-    background: linear-gradient(0deg, rgba(78,182,140,1) 0%, rgba(134,212,145,1) 100%);
+    background: linear-gradient(0deg, rgba(0,153,0,1) 0%, rgba(0,203,0,1) 100%);
 }
 
 .mainCardBundle .upperCard{
-    background-color: #DB006F;
+    background: linear-gradient(90deg, rgba(227,46,188,1) 0%, rgba(162,0,130,1) 100%);
 }
 
 .mainCardBundle .lowerCard{
-    background-color: #B80053;
+    background: linear-gradient(90deg, rgba(196,46,227,1) 0%, rgba(136,0,170,1) 100%);
 }
 
 .mainCardBundle .cardButton{
-    color: #B80053;
+    color: rgba(136,0,170,1);
 }
 
 .mainCardSoon .upperCard{
-    background-color: #00AF68;
+    background: linear-gradient(90deg, rgba(35,229,35,1) 0%, rgba(0,139,0,1) 100%);
 }
 
 .mainCardSoon .lowerCard{
-    background-color: #009784;
+    background: linear-gradient(90deg, rgba(30,198,30,1) 0%, rgba(0,121,0,1) 100%);
 }
 
 .mainCardSoon .cardButton{
-    color: #009784;
+    color: rgba(0,121,0,1);
     cursor: not-allowed;
 }
 
@@ -633,7 +633,7 @@ h2{
 /* Footer */
 
 .footer{
-    background-color: #0086D9;
+    background:linear-gradient(90deg, rgba(38,110,209,1) 0%, rgba(0,29,109,1) 100%);
     width: 100%;
     min-height: 200px;
     position: relative;
@@ -646,14 +646,14 @@ h2{
 
 .divider{
   border: 1px solid #6F94BC;
-  width: 80%;
+  width: 90%;
   position: relative;
   top: 25vh;
   margin: auto;
 }
 
 .cardDivider{
-    max-width:80%;
+    width: 90%;
     border: 1px solid #6F94BC;
     position: relative;
     top: 50vh;
@@ -661,7 +661,7 @@ h2{
 }
 
 .giveawayDivider{
-    max-width:80%;
+    width: 90%;
     border: 1px solid #6F94BC;
     position: relative;
     top: 0vh;
@@ -669,7 +669,7 @@ h2{
 }
 
 .faqDivider{
-    max-width:80%;
+    width: 90%;
     border: 1px solid #6F94BC;
     position: relative;
     top: 70vh;
@@ -677,7 +677,7 @@ h2{
 }
 
 .contactDivider{
-    max-width:80%;
+    width: 90%;
     border: 1px solid #6F94BC;
     position: relative;
     top: -10vh;
