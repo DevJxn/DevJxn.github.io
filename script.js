@@ -21,7 +21,7 @@ $(document).ready(function(){
                 document.getElementById("checkbox").checked = false;
             }
 
-       } // end if
+       }
 
     }); // end link function (event)
 
