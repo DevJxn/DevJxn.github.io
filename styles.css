@@ -380,14 +380,20 @@ h2{
     color: white;
     position: relative;
     top: 17%;
-    justify-content: space-around;
-    margin: 10px;
+    justify-content: center;
+    margin-left: 0px;
+}
+
+.infoSection div{
+  margin-bottom: 5px;
 }
 
 .cardInfo{
     font-size: 16px;
     background-color: #444655;
     padding: 2px 7px 2px 7px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .fas.fa-check{
@@ -400,7 +406,7 @@ h2{
 
 .cardButton{
     position: relative;
-    top: 50px;
+    top: 40px;
     -moz-top: 30%;
     left: 50%;
     transform: translateX(-50%);
