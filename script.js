@@ -69,7 +69,8 @@ function getBundleName(pBundleName,pTriggerElement){
                       "images/circlesScreen.jpg",
                       "images/triangleScreen.jpg",
                       "images/cubeScreen.jpg",
-                      "images/sidebarScreen.jpg"];
+                      "images/sidebarScreen.jpg",
+                      "images/lovingFrizzyScreen.jpg"];
 
   }else if(pBundleName === document.getElementById("simpleStatsBundle")){
     var imageLinks = ["images/simpleBundleScreen.jpg",
@@ -89,6 +90,10 @@ function getBundleName(pBundleName,pTriggerElement){
                       "images/triangleScreen.jpg",
                       "images/circlesScreen.jpg",
                       "images/cubeScreen.jpg"];
+  }else if(pBundleName == document.getElementById("frizzyBundle")){
+    var imageLinks = ["images/frizzyBundleScreen.jpg",
+                      "images/frizzyScreen.jpg",
+                      "images/lovingFrizzyScreen.jpg"];
   }
 
   var rightButtonArray = document.getElementsByClassName("slideButtonRight");
