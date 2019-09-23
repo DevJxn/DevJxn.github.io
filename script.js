@@ -74,7 +74,10 @@ function getBundleName(pBundleName,pTriggerElement){
                       "images/dividedScreen.jpg",
                       "images/palmScreen.jpg",
                       "images/camelScreen.jpg",
-                      "images/treeScreen.jpg"];
+                      "images/treeScreen.jpg",
+                      "images/autumnScreen.jpg",
+                      "images/spukyScreen.jpg",
+                      "images/trickScreen.jpg"];
 
   }else if(pBundleName === document.getElementById("simpleStatsBundle")){
     var imageLinks = ["images/simpleBundleScreen.jpg",
@@ -83,7 +86,8 @@ function getBundleName(pBundleName,pTriggerElement){
                       "images/summerStatsScreen.jpg",
                       "images/nyStatsScreen.jpg",
                       "images/londonStatsScreen.jpg",
-                      "images/mountainStatsScreen.jpg"];
+                      "images/mountainStatsScreen.jpg",
+                      "images/autumnScreen.jpg"];
   }else if(pBundleName === document.getElementById("cityBundle")){
     var imageLinks = ["images/cityBundleScreen.jpg",
                       "images/nyStatsScreen.jpg",
