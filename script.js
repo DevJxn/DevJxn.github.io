@@ -98,10 +98,12 @@ function getBundleName(pBundleName,pTriggerElement){
                       "images/triangleScreen.jpg",
                       "images/circlesScreen.jpg",
                       "images/cubeScreen.jpg"];
-  }else if(pBundleName == document.getElementById("frizzyBundle")){
-    var imageLinks = ["images/frizzyBundleScreen.jpg",
-                      "images/frizzyScreen.jpg",
-                      "images/lovingFrizzyScreen.jpg"];
+  }else if(pBundleName == document.getElementById("autumnBundle")){
+    var imageLinks = ["images/autumnBundle.jpg",
+                      "images/autumnScreen.jpg",
+                      "images/fallScreen.jpg",
+                      "images/spukyScreen.jpg",
+                      "images/trickScreen.jpg"];
   }
 
   var rightButtonArray = document.getElementsByClassName("slideButtonRight");
