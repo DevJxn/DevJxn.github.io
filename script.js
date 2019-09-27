@@ -76,8 +76,10 @@ function getBundleName(pBundleName,pTriggerElement){
                       "images/camelScreen.jpg",
                       "images/treeScreen.jpg",
                       "images/autumnScreen.jpg",
+                      "images/fallScreen.jpg",
                       "images/spukyScreen.jpg",
-                      "images/trickScreen.jpg"];
+                      "images/trickScreen.jpg",
+                      "images/redForestScreen.jpg"];
 
   }else if(pBundleName === document.getElementById("simpleStatsBundle")){
     var imageLinks = ["images/simpleBundleScreen.jpg",
@@ -103,7 +105,8 @@ function getBundleName(pBundleName,pTriggerElement){
                       "images/autumnScreen.jpg",
                       "images/fallScreen.jpg",
                       "images/spukyScreen.jpg",
-                      "images/trickScreen.jpg"];
+                      "images/trickScreen.jpg",
+                      "images/redForestScreen.jpg"];
   }
 
   var rightButtonArray = document.getElementsByClassName("slideButtonRight");
