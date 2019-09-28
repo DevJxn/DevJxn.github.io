@@ -291,7 +291,7 @@ h2{
 .mainCard, .mainCardBundle, .mainCardSoon{
     width: 300px;
     height: 400px;
-    margin: 25px 25px 75px 25px;
+    margin: 25px 15px 75px 15px;
     position: relative;
 }
 
@@ -716,13 +716,13 @@ h2{
 
 
     .advantageCardSection{
-        width: 60%;
+        width: 80%;
     }
 
     /* Main Card Section (1000px responsive) */
 
     .mainCardSection{
-        max-width: 90%;
+        max-width: 100%;
     }
 
     .mainCard{
