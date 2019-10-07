@@ -110,6 +110,34 @@ function getBundleName(pBundleName,pTriggerElement){
                       "images/trickScreen.jpg",
                       "images/redForestScreen.jpg",
                       "images/autumnDayScreen.jpg"];
+  }else if(pBundleName == document.getElementById("firstFive")){
+    var imageLinks = ["images/firstFiveScreen.jpg", //change
+                      "images/oceanStatsScreen.jpg",
+                      "images/treeScreen.jpg",
+                      "images/dividedScreen.jpg",
+                      "images/triangleScreen.jpg",
+                      "images/torontoScreen.jpg"];
+  }else if(pBundleName == document.getElementById("secondFive")){
+    var imageLinks = ["images/secondFiveScreen.jpg", //change
+                      "images/sunsetStatsScreen.jpg",
+                      "images/nyStatsScreen.jpg",
+                      "images/circlesScreen.jpg",
+                      "images/palmScreen.jpg",
+                      "images/forestScreen.jpg"];
+  }else if(pBundleName == document.getElementById("thirdFive")){
+    var imageLinks = ["images/thirdFiveScreen.jpg", //change
+                      "images/mountainStatsScreen.jpg",
+                      "images/cubeScreen.jpg",
+                      "images/londonStatsScreen.jpg",
+                      "images/sidebarScreen.jpg",
+                      "images/camelScreen.jpg"];
+  }else if(pBundleName == document.getElementById("fourthFive")){
+    var imageLinks = ["images/fourthFiveScreen.jpg", //change
+                      "images/frizzyScreen.jpg",
+                      "images/lovingFrizzyScreen.jpg",
+                      "images/snakeScreen.jpg",
+                      "images/summerStatsScreen.jpg",
+                      "images/redForestScreen.jpg"];
   }
 
   var rightButtonArray = document.getElementsByClassName("slideButtonRight");
