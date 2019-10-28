@@ -85,7 +85,8 @@ function getBundleName(pBundleName,pTriggerElement){
                       "images/fieldsScreen.jpg",
                       "images/splashScreen.jpg",
                       "images/blueSplashScreen.jpg",
-                      "images/jungleScreen.jpg"];
+                      "images/jungleScreen.jpg",
+                      "images/petalsScreen.jpg"];
 
   }else if(pBundleName === document.getElementById("simpleStatsBundle")){
     var imageLinks = ["images/simpleBundleScreen.jpg",
