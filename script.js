@@ -87,7 +87,8 @@ function getBundleName(pBundleName,pTriggerElement){
                       "images/blueSplashScreen.jpg",
                       "images/jungleScreen.jpg",
                       "images/petalsScreen.jpg",
-                      "images/cementeryScreen.jpg"];
+                      "images/cementeryScreen.jpg",
+                      "images/limbsScreen.jpg"];
 
   }else if(pBundleName === document.getElementById("simpleStatsBundle")){
     var imageLinks = ["images/simpleBundleScreen.jpg",
@@ -110,6 +111,12 @@ function getBundleName(pBundleName,pTriggerElement){
                       "images/cubeScreen.jpg",
                       "images/splashScreen.jpg",
                       "images/blueSplashScreen.jpg"];
+  }else if(pBundleName == document.getElementById("squaresBundle")){
+    var imageLinks = ["images/squaresScreen.jpg",
+                      "images/jungleScreen.jpg",
+                      "images/petalsScreen.jpg",
+                      "images/splashScreen.jpg",
+                      "images/limbsScreen.jpg"];
   }else if(pBundleName == document.getElementById("autumnBundle")){
     var imageLinks = ["images/autumnBundle.jpg",
                       "images/autumnScreen.jpg",
