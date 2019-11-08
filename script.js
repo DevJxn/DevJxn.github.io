@@ -88,7 +88,9 @@ function getBundleName(pBundleName,pTriggerElement){
                       "images/jungleScreen.jpg",
                       "images/petalsScreen.jpg",
                       "images/cementeryScreen.jpg",
-                      "images/limbsScreen.jpg"];
+                      "images/limbsScreen.jpg",
+                      "images/glitterScreen.jpg",
+                      "images/shinyScreen.jpg"];
 
   }else if(pBundleName === document.getElementById("simpleStatsBundle")){
     var imageLinks = ["images/simpleBundleScreen.jpg",
@@ -117,14 +119,16 @@ function getBundleName(pBundleName,pTriggerElement){
                       "images/petalsScreen.jpg",
                       "images/splashScreen.jpg",
                       "images/limbsScreen.jpg"];
-  }else if(pBundleName == document.getElementById("autumnBundle")){
-    var imageLinks = ["images/autumnBundle.jpg",
-                      "images/autumnScreen.jpg",
-                      "images/fallScreen.jpg",
-                      "images/spukyScreen.jpg",
-                      "images/trickScreen.jpg",
-                      "images/redForestScreen.jpg",
-                      "images/autumnDayScreen.jpg"];
+  }else if(pBundleName == document.getElementById("womenBundle")){
+    var imageLinks = ["images/womenScreen.jpg",
+                      "images/shinyScreen.jpg",
+                      "images/glitterScreen.jpg",
+                      "images/frizzyScreen.jpg",
+                      "images/lovingFrizzyScreen.jpg",
+                      "images/splashScreen.jpg",
+                      "images/petalsScreen.jpg",
+                      "images/oceanStatsScreen.jpg",
+                      "images/treeScreen.jpg"];
   }else if(pBundleName == document.getElementById("firstFive")){
     var imageLinks = ["images/firstFiveScreen.jpg", //change
                       "images/oceanStatsScreen.jpg",
