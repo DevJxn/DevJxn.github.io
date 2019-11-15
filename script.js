@@ -91,7 +91,8 @@ function getBundleName(pBundleName,pTriggerElement){
                       "images/limbsScreen.jpg",
                       "images/glitterScreen.jpg",
                       "images/shinyScreen.jpg",
-                      "images/mandalaScreen.jpg"];
+                      "images/mandalaScreen.jpg",
+                      "images/polarScreen.jpg"];
 
   }else if(pBundleName === document.getElementById("simpleStatsBundle")){
     var imageLinks = ["images/simpleBundleScreen.jpg",
@@ -130,7 +131,8 @@ function getBundleName(pBundleName,pTriggerElement){
                       "images/petalsScreen.jpg",
                       "images/oceanStatsScreen.jpg",
                       "images/treeScreen.jpg",
-                      "images/mandalaScreen.jpg"];
+                      "images/mandalaScreen.jpg",
+                      "images/polarScreen.jpg"];
   }else if(pBundleName == document.getElementById("firstFive")){
     var imageLinks = ["images/firstFiveScreen.jpg", //change
                       "images/oceanStatsScreen.jpg",
