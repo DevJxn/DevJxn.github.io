@@ -98,7 +98,12 @@ function getBundleName(pBundleName,pTriggerElement){
                       "images/flowScreen.jpg",
                       "images/snowyScreen.jpg",
                       "images/snowmanScreen.jpg",
-                      "images/holyScreen.jpg"];
+                      "images/holyScreen.jpg",
+                      "images/bnwScreen.jpg",
+                      "images/birdsScreen.jpg",
+                      "images/spikesScreen.jpg",
+                      "images/bakeryScreen.jpg",
+                      "images/frozenScreen.jpg"];
 
   }else if(pBundleName === document.getElementById("simpleStatsBundle")){
     var imageLinks = ["images/simpleBundleScreen.jpg",
@@ -121,7 +126,8 @@ function getBundleName(pBundleName,pTriggerElement){
                       "images/cubeScreen.jpg",
                       "images/splashScreen.jpg",
                       "images/blueSplashScreen.jpg",
-                      "images/flowScreen.jpg"];
+                      "images/flowScreen.jpg",
+                      "images/spikesScreen.jpg"];
   }else if(pBundleName == document.getElementById("squaresBundle")){
     var imageLinks = ["images/squaresScreen.jpg",
                       "images/jungleScreen.jpg",
@@ -140,7 +146,8 @@ function getBundleName(pBundleName,pTriggerElement){
                       "images/treeScreen.jpg",
                       "images/mandalaScreen.jpg",
                       "images/polarScreen.jpg",
-                      "images/flowScreen.jpg"];
+                      "images/flowScreen.jpg",
+                      "images/birdsScreen.jpg"];
   }else if(pBundleName == document.getElementById("firstFive")){
     var imageLinks = ["images/firstFiveScreen.jpg", //change
                       "images/oceanStatsScreen.jpg",
